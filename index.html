@@ -42,7 +42,7 @@
     <link rel="canonical" href="https://villosephia.site">
   
     <!-- Favicon -->
-    <link rel="icon" href="assets/img/1736766553603.png" type="image/png">
+    <link rel="icon" href="assets/img/logo.png" type="image/png">
   
     <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
@@ -52,7 +52,7 @@
 
   <!-- NAVBAR -->
   <nav class="bg-white">
-    <div class="container mx-auto px-4 flex justify-between items-center h-16">
+    <div class="container max-w-[800px] mx-auto px-4 flex justify-between items-center h-16">
       <a href="#" class="text-xl font-bold text-gray-800">Villosephia</a>
       <button id="menu-btn" class="block md:hidden text-gray-800">
         <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -71,7 +71,7 @@
   </nav>
 
   <!-- HERO -->
-  <div class="container mx-auto px-4 py-6 flex flex-col">
+  <div class="container  max-w-[800px] mx-auto px-4 py-6 flex flex-col">
     <h1 class="text-4xl"><strong>Welcome to Villosephia.</strong> Where Thoughts Ripple into Brilliance.</h1>
     <a href="about.html" class="relative bg-black text-white w-40 h-10 my-6 border-2 border-black flex items-center justify-center">
       <span class="absolute inset-0 bg-black border-t-0 border-l-0 border-b-2 border-r-2 border-white pointer-events-none"></span>
@@ -83,31 +83,53 @@
   
 
   <!-- MAIN CONTENT -->
-  <div class="container mx-auto px-4 py-6 flex flex-wrap md:flex-nowrap">
+  <div class="container  max-w-[800px] mx-auto px-4 py-6 flex flex-col">
 
-    <!-- Articles Section -->
-    <div class="w-full md:w-3/4">
-      <!-- Search -->
-      <input 
-        id="search-bar" 
-        type="text" 
-        placeholder="Search articles..." 
-        class="w-full p-2 mb-4 border border-gray-300 rounded-md focus:ring focus:ring-indigo-200"
-      >
+    <!-- Banner -->
+
+    <!-- Branch Section -->
+    <div class="w-full">
       
-      <!-- Articles List -->
-      <div id="articles-list" class="grid gap-4 mb-10">
-        <!-- Articles will be dynamically added here -->
+      <!-- Branch -->
+      <div class="grid gap-10 mb-10">
+        
+        <div>
+          <a href="https://growthphilosophy.villosephia.site/" class="block">
+            <h1 class="text-3xl font-bold leading-relaxed text-gray-900 hover:underline">Mental Growth</h1>
+            <p class="text-sm text-gray-500 leading-relaxed">growthphilosophy.villosephia.site</p>
+            <p class="text-lg text-black font-medium mt-2">Exploring the inner journey to understand yourself better, going beyond just gaining knowledge. It's about deep reflections and self-introspection that help you grow mentally.</p>
+          </a>
+        </div>
+
+        <div>
+          <a href="https://newsinsight.villosephia.site/" class="block">
+            <h1 class="text-3xl font-bold leading-relaxed text-gray-900 hover:underline">News Opinions</h1>
+            <p class="text-sm text-gray-500 leading-relaxed">newsinsight.villosephia.site</p>
+            <p class="text-lg text-black font-medium mt-2">Breaking down the news from a more thoughtful, philosophical angle, digging into the deeper meaning behind events and how they connect to worldviews and life principles.</p>
+          </a>
+        </div>
+
+        <div>
+          <a href="https://youthperspectives.villosephia.site/" class="block">
+            <h1 class="text-3xl font-bold leading-relaxed text-gray-900 hover:underline">Education for the Youth</h1>
+            <p class="text-sm text-gray-500 leading-relaxed">youthperspectives.villosephia.site</p>
+            <p class="text-lg text-black font-medium mt-2">Teaching the younger generation how to see the world through a wider, deeper lens. Not just about facts, but the context behind them, pushing for critical and creative thinking.</p>
+          </a>
+        </div>
+
+        <div>
+          <a href="https://techwisdom.villosephia.site/" class="block">
+            <h1 class="text-3xl font-bold leading-relaxed text-gray-900 hover:underline">Tech and Innovation</h1>
+            <p class="text-sm text-gray-500 leading-relaxed">techwisdom.villosephia.site</p>
+            <p class="text-lg text-black font-medium mt-2">Diving into tech as a mirror of social change, exploring the philosophy behind innovation and how young generation can shape the future by thinking critically about technology and its impact on humanity.</p>
+          </a>
+        </div>
+
       </div>
     </div>
 
-    <!-- Filter Section -->
-    <div class="w-full md:w-1/4 md:pl-6">
-      <h3 class="text-lg font-bold text-gray-800 mb-4">Categories</h3>
-      <div id="category-filter" class="flex flex-col space-y-2">
-        <!-- Categories will be dynamically added here -->
-      </div>
-    </div>
+
+
   </div>
 
   <footer class="bg-white text-black py-6">
@@ -122,80 +144,6 @@
   </footer>
   
   <script>
-    // ================== DATA ==================
-    const articles = [
-      { title: "Why Failing Might Be the Best Thing That Ever Happened to You?", category: "Self Growth", url: "article/self-growth/why-failing-might-be-the-best-thing-that-ever-happened-to-you.html", date: "15-01-2025" },
-
-
-
-
-
-      // { title: "The Importance of Lifelong Learning for Personal Growth", category: "Personal Growth", url: "https://github.com", date: "2025-01-05" },
-      // { title: "How to Build Healthy Digital Habits for Modern Living", category: "Health", url: "https://github.com", date: "2025-01-10" },
-      // { title: "Simple Strategies to Improve Critical Thinking Skills", category: "Self Development ", url: "https://github.com", date: "2025-01-15" },
-      // { title: "Why Emotional Intelligence Is the Key to Success", category: "Self Development", url: "https://github.com", date: "2025-01-20" },
-      // { title: "Practical Tips for Managing Stress in Everyday Life", category: "Health", url: "https://github.com", date: "2025-01-21" },
-      // { title: "Understanding Cultural Differences to Build Better Connections", category: "Sociology", url: "https://github.com", date: "2025-01-22" },
-      // { title: "How to Develop a Growth Mindset for Lifelong Success", category: "Self Development", url: "https://github.com", date: "2025-01-23" },
-      // { title: "Exploring the Science Behind Better Sleep and Wellbeing", category: "Health", url: "https://github.com", date: "2025-01-24" },
-
-
-
-      // add more ...
-    ];
-
-    // ================== ELEMENTS ==================
-    const articlesList = document.getElementById('articles-list');
-    const categoryFilter = document.getElementById('category-filter');
-    const searchBar = document.getElementById('search-bar');
-
-    // ================== FUNCTIONS ==================
-
-    // Render Articles
-    function renderArticles(filteredArticles) {
-      articlesList.innerHTML = '';
-      filteredArticles.forEach(article => {
-        const articleCard = document.createElement('div');
-        articleCard.classList = 'py-4';
-        articleCard.innerHTML = `
-          <a href="${article.url}">
-            <h3 class="text-2xl font-bold text-black hover:underline">${article.title}</h3>
-            <p class="text-sm text-gray-600">${article.category}  ${article.date}</p>
-          </a>
-        `;
-        articlesList.appendChild(articleCard);
-      });
-    }
-
-    // Render Categories
-    function renderCategories() {
-      const categories = [...new Set(articles.map(article => article.category))];
-      categoryFilter.innerHTML = '';
-      categories.forEach(category => {
-        const categoryBtn = document.createElement('button');
-        categoryBtn.classList = 'px-4 py-1 border border-gray-300 text-left rounded-md hover:bg-gray-100';
-        categoryBtn.textContent = category;
-        categoryBtn.addEventListener('click', () => {
-          const filtered = articles.filter(article => article.category === category);
-          renderArticles(filtered);
-        });
-        categoryFilter.appendChild(categoryBtn);
-      });
-    }
-
-    // Search Articles
-    searchBar.addEventListener('input', (e) => {
-      const searchQuery = e.target.value.toLowerCase();
-      const filtered = articles.filter(article => 
-        article.title.toLowerCase().includes(searchQuery)
-      );
-      renderArticles(filtered);
-    });
-
-    // ================== INITIALIZATION ==================
-    renderArticles(articles); // Show all articles initially
-    renderCategories(); // Show categories dynamically
-
 
     // ================== MOBILE MENU ==================
 
